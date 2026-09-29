@@ -1,0 +1,2 @@
+
+<a class="post-card" href="{{ include.post.url | relative_url }}"><div class="post-meta">{{ include.post.date | date: "%d %b %Y" }}<br>{{ include.post.category }}</div><div><h3 class="post-title">{{ include.post.title }}</h3><p class="post-excerpt">{{ include.post.excerpt_text }}</p></div><div class="post-side">{% assign a = site.data.authors[include.post.author] %}By {{ a.name }}<br>{% for tag in include.post.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</div></a>

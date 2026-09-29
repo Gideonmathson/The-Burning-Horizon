@@ -1,0 +1,7 @@
+
+---
+layout: default
+title: Sections
+permalink: /categories/
+---
+<section class="wrap page-head"><h1>Sections</h1><p>The blog remains chronological; these are recurring forms rather than separate projects.</p></section><section class="wrap grid"><div class="box"><div class="eyebrow">01</div><h3>Phenomenology</h3><p>Husserl, Merleau-Ponty and related traditions: horizon, intentionality, perception, time, embodiment, lifeworld.</p></div><div class="box"><div class="eyebrow">02</div><h3>Fieldnotes</h3><p>Dense descriptions of thermal situations, bodies, work, shade, surfaces, night, movement and refuge.</p></div><div class="box"><div class="eyebrow">03</div><h3>Heat / Now</h3><p>News, heatwaves, policy, science and events without reducing thermal life to temperature records.</p></div><div class="box"><div class="eyebrow">04</div><h3>Readings</h3><p>Close reading and commentary on philosophical, social-scientific and thermal texts.</p></div><div class="box"><div class="eyebrow">05</div><h3>Essays</h3><p>Longer arguments bringing phenomenology, anthropology, cities and thermal processes into the same frame.</p></div><div class="box"><div class="eyebrow">06</div><h3>Fragments</h3><p>Images, scenes, objects, sentences, definitions and unfinished observations.</p></div></section>

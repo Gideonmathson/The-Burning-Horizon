@@ -1,0 +1,11 @@
+
+editor:
+  name: "Founding Editor"
+  role: "Editor"
+  bio: "Writes on heat, perception, embodiment, cities, and phenomenology."
+  link: "/authors/editor/"
+guest:
+  name: "Guest Contributor"
+  role: "Contributor"
+  bio: "A placeholder profile for invited writers."
+  link: "/authors/guest/"
