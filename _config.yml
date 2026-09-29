@@ -1,12 +1,12 @@
-
 title: "The Burning Horizon"
 description: "heat.perception.body.world"
-url: ""
-baseurl: ""
+url: "https://gideonmathson.github.io"
+baseurl: "/The-Burning-Horizon"
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 timezone: Asia/Kolkata
 future: true
+
 defaults:
   - scope:
       path: ""
