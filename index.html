@@ -1,4 +1,84 @@
----
-layout: default
----
-<main><section class="wrap hero"><h1>The Burning<br>Horizon</h1><div class="subtitle">heat.perception.body.world</div><p class="hero-note">A multi-author blog for descriptions of heat and the worlds it makes perceptible: phenomenology and its texts, fieldnotes and lived experience, thermal science, essays, and the changing news of a warming world.</p></section>{% assign featured = site.posts | where: "featured", true | first %}{% if featured %}<section class="wrap featured"><div class="featured-copy"><div class="eyebrow">Featured · {{ featured.category }}</div><h2><a href="{{ featured.url | relative_url }}" style="text-decoration:none">{{ featured.title }}</a></h2><p>{{ featured.excerpt_text }}</p>{% assign a = site.data.authors[featured.author] %}<div class="smallcaps">By {{ a.name }}</div></div><a class="featured-art" href="{{ featured.url | relative_url }}" aria-label="Read featured post"></a></section>{% endif %}<section class="wrap"><div class="feed-head"><h2>Latest writing</h2><p>Essays, fieldnotes, readings, reports, fragments.</p></div>{% for post in site.posts %}{% unless post.featured %}{% include post-card.html post=post %}{% endunless %}{% endfor %}</section></main>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="heat.perception.body.world">
+  <title>The Burning Horizon</title>
+  <link rel="stylesheet" href="/The-Burning-Horizon/assets/css/style.css?v=2">
+</head>
+<body>
+<header class="wrap site-header">
+  <a class="brand" href="/The-Burning-Horizon/">
+    <span class="brand-title">The Burning Horizon</span>
+    <span class="brand-sub">heat.perception.body.world</span>
+  </a>
+  <nav class="nav" aria-label="Primary">
+    <a href="/The-Burning-Horizon/">Latest</a>
+    <a href="/The-Burning-Horizon/archive/">Archive</a>
+    <a href="/The-Burning-Horizon/authors/">Authors</a>
+    <a href="/The-Burning-Horizon/categories/">Sections</a>
+    <a href="/The-Burning-Horizon/about/">About</a>
+    <a href="/The-Burning-Horizon/contribute/">Contribute</a>
+  </nav>
+</header>
+<main>
+  <section class="wrap hero">
+    <h1>The Burning<br>Horizon</h1>
+    <div class="subtitle">heat.perception.body.world</div>
+    <p class="hero-note">A multi-author blog for descriptions of heat and the worlds it makes perceptible: phenomenology and its texts, fieldnotes and lived experience, thermal science, essays, and the changing news of a warming world.</p>
+  </section>
+
+  <section class="wrap featured">
+    <div class="featured-copy">
+      <div class="eyebrow">Featured · Phenomenology</div>
+      <h2><a href="/The-Burning-Horizon/2026/09/29/heat-between-skin-and-world/" style="text-decoration:none">The heat between skin and world</a></h2>
+      <p>What changes when heat is approached not first as a number, but as a transformation in the body's relation to surface, distance, time, effort and possibility?</p>
+      <div class="smallcaps">By Founding Editor</div>
+    </div>
+    <a class="featured-art" href="/The-Burning-Horizon/2026/09/29/heat-between-skin-and-world/" aria-label="Read featured post"></a>
+  </section>
+
+  <section class="wrap">
+    <div class="feed-head">
+      <h2>Latest writing</h2>
+      <p>Essays, fieldnotes, readings, reports, fragments.</p>
+    </div>
+
+    <a class="post-card" href="/The-Burning-Horizon/2026/09/27/the-divider-at-night/">
+      <div class="post-meta">27 Sep 2026<br>Fieldnotes</div>
+      <div><h3 class="post-title">The divider at night</h3><p class="post-excerpt">A strip of road infrastructure becomes a place of rest because traffic, danger and moving air occupy the same piece of ground.</p></div>
+      <div class="post-side">By Founding Editor<br><span class="tag">Delhi</span><span class="tag">night</span><span class="tag">breeze</span><span class="tag">infrastructure</span></div>
+    </a>
+
+    <a class="post-card" href="/The-Burning-Horizon/2026/09/24/reading-husserl-horizon/">
+      <div class="post-meta">24 Sep 2026<br>Readings</div>
+      <div><h3 class="post-title">Reading Husserl: horizon</h3><p class="post-excerpt">A reading note on why the phenomenological horizon may be a particularly powerful concept for thinking thermal experience.</p></div>
+      <div class="post-side">By Founding Editor<br><span class="tag">Husserl</span><span class="tag">horizon</span><span class="tag">intentionality</span></div>
+    </a>
+
+    <a class="post-card" href="/The-Burning-Horizon/2026/09/20/when-a-wall-keeps-the-afternoon/">
+      <div class="post-meta">20 Sep 2026<br>Fragments</div>
+      <div><h3 class="post-title">When a wall keeps the afternoon</h3><p class="post-excerpt">A wall after sunset is not merely an object cooling down. It can keep an earlier hour present.</p></div>
+      <div class="post-side">By Guest Contributor<br><span class="tag">surface</span><span class="tag">radiation</span><span class="tag">night</span></div>
+    </a>
+
+    <a class="post-card" href="/The-Burning-Horizon/2026/09/18/merleau-ponty-and-the-hot-room/">
+      <div class="post-meta">18 Sep 2026<br>Phenomenology</div>
+      <div><h3 class="post-title">Merleau-Ponty and the hot room</h3><p class="post-excerpt">What the hot room reveals about the lived body, spatial orientation, habit, and the difference between being in space and inhabiting it.</p></div>
+      <div class="post-side">By Founding Editor<br><span class="tag">Merleau-Ponty</span><span class="tag">embodiment</span><span class="tag">space</span></div>
+    </a>
+
+    <a class="post-card" href="/The-Burning-Horizon/2026/09/15/heat-now-editorial-note/">
+      <div class="post-meta">15 Sep 2026<br>Heat / Now</div>
+      <div><h3 class="post-title">Heat / Now: what this section is for</h3><p class="post-excerpt">How a blog about phenomenology can cover heat news without turning every event into either a temperature record or a philosophical illustration.</p></div>
+      <div class="post-side">By Founding Editor<br><span class="tag">news</span><span class="tag">climate</span><span class="tag">method</span></div>
+    </a>
+  </section>
+</main>
+<footer class="wrap footer">
+  <div><strong>The Burning Horizon</strong><br>heat.perception.body.world</div>
+  <div>A multi-author blog on phenomenology, heat, bodies, atmospheres, fieldwork, reading, and the contemporary world.</div>
+</footer>
+</body>
+</html>
